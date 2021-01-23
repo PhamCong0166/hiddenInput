@@ -1,0 +1,52 @@
+*{margin:0;padding:0; }
+ .container
+ {
+     width: 100vw;
+     height: 100vh;
+     background-color: #55A8FC;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .search {
+    position: relative;
+    
+}
+  
+input
+{
+    right: 0px;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius:50px;
+    width: 0px;
+    transition: 0.5s linear;
+    
+}
+
+ button{
+     top: -5px;
+    right: -5px;
+    position: absolute;
+     padding: 20px;
+     border: none;
+     outline: none;
+     font-size: 15px;
+     border-radius: 50px;
+     background-color: white;
+     cursor: pointer;
+  
+ }
+ .active
+ {
+     display: flex;
+     width: 150px;
+ }
+ @media only screen and (max-width: 500px) {
+    .search
+    {
+        right: -70px;
+    }
+ }
